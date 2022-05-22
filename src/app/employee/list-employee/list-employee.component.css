@@ -1,0 +1,25 @@
+.fa-user-plus{
+  color: white; 
+  background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px; 
+  }
+  table{
+    width: 100%;  
+    border-collapse: collapse;
+    text-align: center;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  .fa-eye,.fa-trash-o{
+    color: white;
+    display: inline-block;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+  }

@@ -1,0 +1,46 @@
+<h2>Employee List</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Age</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Action <a (click)="createEmployee()"><i class="fa fa-user-plus"></i></a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngIf="employeeData && employeeData.length>0">
+            <td>
+                
+            </td>
+            <td>
+                <input type="text" [(ngModel)]="searchValue">
+            </td>
+            <td>
+                
+            </td><td>
+                
+            </td><td>
+                
+            </td>
+<td></td><td></td>
+        </tr>
+        <tr *ngFor="let emp of employeeData | searchfilter:searchValue">
+            <td>{{emp.id}}</td>
+            <td>{{emp.firstName}} {{emp.lastName}}</td>
+            
+            <td>{{ emp?.role?.role }} </td>
+            <td>{{emp.age}}</td>
+            <td>{{emp.startDate}}</td>
+            <td>{{ emp.endDate ? emp.endDate :"Currently Working"}}</td>
+            <td>
+                <a (click)="edit(emp.id)"><i class="fa fa-eye"></i></a>
+                <a (click)="deletePost(emp)"><i class="fa fa-trash-o"></i></a>               
+            </td>
+        </tr>
+    </tbody>
+</table>

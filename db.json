@@ -1,0 +1,47 @@
+{
+  "posts": [
+    {
+      "firstName": "Vijaym",
+      "lastName": "Mishra",
+      "age": "23",
+      "startDate": "2022-05-28",
+      "endDate": "",
+      "id": 2,
+      "role": {
+        "role": "Technician"
+      }
+    },
+    {
+      "firstName": "Vijay",
+      "lastName": "Mishr",
+      "age": "23",
+      "startDate": "2022-05-24",
+      "endDate": "2022-05-26",
+      "role": "",
+      "id": 3
+    },
+    {
+      "firstName": "Shiva",
+      "lastName": "Shankar",
+      "age": "23",
+      "startDate": "2022-05-24",
+      "endDate": "2022-05-25",
+      "id": 4
+    },
+    {
+      "firstName": "Shiv",
+      "lastName": "Bhole",
+      "age": "23",
+      "startDate": "2022-05-26",
+      "endDate": "2036-12-24",
+      "role": {
+        "role": "Manager"
+      },
+      "id": 5
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

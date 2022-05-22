@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Employee Details Form</h1>
+    <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Your name.." formControlName="firstName">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Your last name.." formControlName="lastName">
+
+        <div class="row" formGroupName="role">
+            <label for="role">Role</label>
+            <select class="form-control" formControlName="role">
+                <option value="">Choose Role</option>
+                <option *ngFor="let role of role" [ngValue]="role">{{role}}</option>
+            </select>
+        </div>
+        <label for="age">Age</label>
+        <input type="text" id="age" placeholder="Your last name.." formControlName="age">
+        <label for="startdate">Start Date</label>
+        <input type="date" id="startdate" placeholder="Your last name.." formControlName="startDate">
+        <label for="enddate">End Date</label>
+        <input type="date" id="enddate" placeholder="Your last name.." formControlName="endDate">
+
+        <input type="submit" value="Submit" (click)="createEmployee()">
+
+    </form>
+</div>
